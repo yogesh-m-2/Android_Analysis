@@ -14,6 +14,27 @@
 6.dex2jar<br>
 7.jd-gui "name of the file class which decompiled using dex2jar"<br>
 
+<h3>run activiy without going to app</h3>
+1.see the activity in AndroidManifest.xml -> search for AccessCoontrolActivity<br>
+start the adb shell
+2.am //activity manager
+3.am start -a "activity_name" //eg.jakhar.aseem.diva.action.view_creds
+4.am start -a "activity_name" --ez "defenition variable" "parameter"
+
+<h3>content provider</h3>
+1.adb shell content query --uri "content://..." //find out the content provider name AndroidManifest.xml or anywhere
+
+<h3>set server</h3>
+1.download AndroidLabServer
+2.run app.py //server has started now.make changes in app so that it gets rooted to this server
+//now to hook the api
+3.download AndBug
+4.andbug shell -p "process_id of the app"
+5.classes
+6.methods
+7.you can monitor activities
+
+
 <h3>Java Debugger</h3>
 1.adb jdwp<br>
 2.adb shell ps | grep "app_name"<br>
