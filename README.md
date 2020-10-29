@@ -16,23 +16,23 @@
 
 <h3>run activiy without going to app</h3>
 1.see the activity in AndroidManifest.xml -> search for AccessCoontrolActivity<br>
-start the adb shell
-2.am //activity manager
-3.am start -a "activity_name" //eg.jakhar.aseem.diva.action.view_creds
-4.am start -a "activity_name" --ez "defenition variable" "parameter"
+start the adb shell<br>
+2.am //activity manager<br>
+3.am start -a "activity_name" //eg.jakhar.aseem.diva.action.view_creds<br>
+4.am start -a "activity_name" --ez "defenition variable" "parameter"<br>
 
 <h3>content provider</h3>
-1.adb shell content query --uri "content://..." //find out the content provider name AndroidManifest.xml or anywhere
+1.adb shell content query --uri "content://..." //find out the content provider name AndroidManifest.xml or anywhere<br>
 
 <h3>set server</h3>
-1.download AndroidLabServer
-2.run app.py //server has started now.make changes in app so that it gets rooted to this server
-//now to hook the api
-3.download AndBug
-4.andbug shell -p "process_id of the app"
-5.classes
-6.methods
-7.you can monitor activities
+1.download AndroidLabServer<br>
+2.run app.py //server has started now.make changes in app so that it gets rooted to this server<br>
+//now to hook the api<br>
+3.download AndBug<br>
+4.andbug shell -p "process_id of the app"<br>
+5.classes<br>
+6.methods<br>
+7.you can monitor activities<br>
 
 
 <h3>Java Debugger</h3>
