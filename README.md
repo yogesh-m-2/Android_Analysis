@@ -53,5 +53,5 @@ start the adb shell<br>
 5.run app.package.attacksurface "package_name"<br>
 6.run app.activity.info -a "package_name"<br>
 7.run scanner.provider.finduris -a "package name" - find content uri<br>
-8.run app.provider.query -a "package name" - to query a content<br>
-9.run app.activity.start --component "package name" "component name"<br>
+8.run app.provider.query -a "//content name" - to query a content<br>
+9.run app.activity.start  --component "package name"  "component name"<br>
