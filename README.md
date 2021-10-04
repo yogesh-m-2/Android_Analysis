@@ -55,3 +55,16 @@ start the adb shell<br>
 7.run scanner.provider.finduris -a "package name" - find content uri<br>
 8.run app.provider.query -a "//content name" - to query a content<br>
 9.run app.activity.start  --component "package name"  "component name"<br>
+
+
+install burp cert<br>
+openssl x509 -inform DER -in ca.der -out ca.pem
+openssl x509 -inform PEM -subject_hash_old -in ca.pem | head -1
+(Randomnumber)
+cp ca.pem (Randomnumber).0
+adb root
+adb remount
+adb push (Randomnumber).0 /data/local/tmp/ 
+adb shell
+cp /data/local/tmp/(Randomnumber).0 /system/etc/security/cacerts/
+chmod 644 /system/etc/security/cacerts/(Randomnumber).0
