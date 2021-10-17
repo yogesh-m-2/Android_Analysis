@@ -58,13 +58,13 @@ start the adb shell<br>
 
 
 <h3>install burp cert<h3><br>
-openssl x509 -inform DER -in ca.der -out ca.pem
-openssl x509 -inform PEM -subject_hash_old -in ca.pem | head -1
-(Randomnumber)
-cp ca.pem (Randomnumber).0
-adb root
-adb remount
-adb push (Randomnumber).0 /data/local/tmp/ 
-adb shell
-cp /data/local/tmp/(Randomnumber).0 /system/etc/security/cacerts/
-chmod 644 /system/etc/security/cacerts/(Randomnumber).0
+openssl x509 -inform DER -in ca.der -out ca.pem<br>
+openssl x509 -inform PEM -subject_hash_old -in ca.pem | head -1<br>
+(Randomnumber)<br>
+cp ca.pem (Randomnumber).0<br>
+adb root<br>
+adb remount<br>
+adb push (Randomnumber).0 /data/local/tmp/ <br>
+adb shell<br>
+cp /data/local/tmp/(Randomnumber).0 /system/etc/security/cacerts/<br>
+chmod 644 /system/etc/security/cacerts/(Randomnumber).0<br>
