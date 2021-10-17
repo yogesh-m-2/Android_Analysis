@@ -57,7 +57,7 @@ start the adb shell<br>
 9.run app.activity.start  --component "package name"  "component name"<br>
 
 
-install burp cert<br>
+<h3>install burp cert<h3><br>
 openssl x509 -inform DER -in ca.der -out ca.pem
 openssl x509 -inform PEM -subject_hash_old -in ca.pem | head -1
 (Randomnumber)
